@@ -1,8 +1,17 @@
 body {
   background: #afbbf2;
-  background-image: linear-gradient(0deg, #d3fff3 0%, #7f0799 100%);
+  background-image: linear-gradient(0deg, #d3fff3 0%, #7e0799a1 100%),
+  url(./media/patron1.webp);
   align-items: center;
 }
+
+h1{
+  margin: 0;
+}
+.modal-div{
+
+}
+
 
 /* Estilos del header */
 .navbar {
