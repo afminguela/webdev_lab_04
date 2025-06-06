@@ -1,38 +1,39 @@
 body {
-  background: #22c1c3;
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
+  background: #afbbf2;
+  background: linear-gradient(0deg, #d3fff3 0%, #7f0799 100%);
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilos del header */
 .navbar {
-  background-color: #0ed2bb;
-   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  background-color: #afbbf2;
+  box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
-  width: auto;
-  
+  width: 100%;
+  height: 7%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   font-size: 2vh;
   border-radius: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .navbar-links {
   display: flex;
   width: 33%;
-  color:#525555 !important
+  font-style: oblique;
 }
-li {
+.navbar li {
   width: 33%;
   list-style-type: none;
 }
 .navbar-links :hover {
   color: bisque;
+  transform: scale3d(1.5, 1.5, 1.5);
+  text-shadow: #525555 10px 10px 3px;
 }
 
 /* Estilos del Main */
@@ -40,34 +41,43 @@ main {
   margin: 10% 5%;
 }
 
-
 .titulo {
   text-align: center;
   text-shadow: #525555 10px 10px 3px;
-  margin: 0 0 0 0;
   font-size: 400%;
-  margin-block-end: 0px;
-margin-block-start: 0px;
+  font-family: fantasy;
 }
 
+#lista-artistas {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.h2-artistas {
+}
+
+.p-artistas {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 /* Estilos de Artistas y fotos */
 
 #artista1 {
   margin-top: 20%;
-   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   border-radius: 25px;
   overflow: hidden;
+  border: 4px inset #fc1dfc;
 }
 #artista2 {
   height: fit-content;
   margin-top: 2%;
-   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: top;
   border-radius: 25px;
   overflow: hidden;
+  border: 4px inset #fc1dfc;
 }
 .artista1-imagen {
   width: 50%;
@@ -82,6 +92,7 @@ margin-block-start: 0px;
   width: 50%;
   justify-content: center;
   align-items: center;
+  line-height: 3vh;
 }
 
 /* Estilos de agenda */
@@ -89,11 +100,11 @@ margin-block-start: 0px;
 #agenda {
   display: flex;
   margin-top: 20%;
-   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
   align-items: center;
   flex-direction: column;
   border-radius: 25px;
-  border: 5px solid black;
+  border: 2px inset #fc1dfc;
   overflow: hidden;
 }
 
