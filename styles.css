@@ -1,0 +1,139 @@
+body {
+  background: #22c1c3;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del header */
+.navbar {
+  background-color: #0ed2bb;
+   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  
+  font-size: 2vh;
+  border-radius: 20px;
+}
+.navbar-links {
+  display: flex;
+  width: 33%;
+  color:#525555 !important
+}
+li {
+  width: 33%;
+  list-style-type: none;
+}
+.navbar-links :hover {
+  color: bisque;
+}
+
+/* Estilos del Main */
+main {
+  margin: 10% 5%;
+}
+
+
+.titulo {
+  text-align: center;
+  text-shadow: #525555 10px 10px 3px;
+  margin: 0 0 0 0;
+  font-size: 400%;
+  margin-block-end: 0px;
+margin-block-start: 0px;
+}
+
+/* Estilos de Artistas y fotos */
+
+#artista1 {
+  margin-top: 20%;
+   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#artista2 {
+  height: fit-content;
+  margin-top: 2%;
+   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: top;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.artista1-imagen {
+  width: 50%;
+}
+
+.artista2-imagen {
+  width: 50%;
+}
+.artista1-texto,
+.artista2-texto {
+  padding: 1%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos de agenda */
+
+#agenda {
+  display: flex;
+  margin-top: 20%;
+   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+.agenda-table {
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 90%;
+  border-collapse: collapse;
+  margin: 2rem 2rem;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #ead673;
+  overflow: hidden;
+  box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-header {
+  background-color: #2a7a71;
+  color: white;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.agenda-table tbody tr:nth-child(even) {
+  background-color: #98edcf;
+}
+
+.agenda-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.agenda-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* Estilos del footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

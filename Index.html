@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Star</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- ----Comentar es de guapas. Header Con su logo, H1 y  navbar, en tres elementos con el ultimo con dos elementos dentro,  en flex a los laos   -->
+    <header>
+      <nav class="navbar">
+        <img
+          class="logo"
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRx-GppkPeyHkLustQkjKXYLxc6lr48L13Z7UwH7Fl95e8eg1w5Fjtdm7vOPAxBmwMPy9j1tAsrJEbMFHY6NSmkZK_BTvTRceLo4FDL2K91sJ13nrhEzqZXyg&usqp=CAc"
+          alt="Logo nota musical"
+          width="10%"
+        />
+        <h2>Sing Star</h2>
+
+        <ul class="navbar-links" aria-label="Menu">
+          <li aria-label="Link a perico"><a href="#artista1">Perico</a></li>
+          <li aria-label="Link a Malafé"><a href="#artista2">Malafé</a></li>
+          <li aria-label="Link a Agenda"><a href="#agenda">Agenda</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+<!-- Cuerpo de la página tres secciones, dos de artistas con foto y texto ilustrativo y una con la tabla con los conciertos-->
+
+    <main>
+      <section class="titulo">
+        <h1 aria-label="Titulo">Sing Star</h1>
+        <p style="font-size: medium">
+          The new way to conect to your favourites pop singstars
+        </p>
+      </section>
+
+
+<!-- Artista 1  --+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
+      <section id="artista1" aria-label="perico de los palotes">
+        <img
+          class="artista1-imagen"
+          aria-label="Imagen"
+          src="./media/perico.jpeg"
+          alt="Perico de los palotes en plena actuación"
+        />
+
+        <div class="artista1-texto">
+          <h2>Perico de los palotes</h2>
+          <p>
+            Una mañana, tras un sueño intranquilo, Gregorio Samsa se despertó
+            convertido en un monstruoso insecto. Estaba echado de espaldas sobre
+            un duro caparazón y, al alzar la cabeza, vio su vientre convexo y
+            oscuro, surcado por curvadas callosidades, sobre el que casi no se
+            aguantaba la colcha, que estaba a punto de escurrirse hasta el
+            suelo. Numerosas patas, penosamente delgadas en comparación con el
+            grosor normal de sus piernas, se agitaban sin concierto. - ¿Qué me
+            ha ocurrido? No estaba soñando. Su habitación, una habitación
+            normal, aunque muy pequeña, tenía el aspecto habitual. Sobre la mesa
+            había desparramado un muestrario
+          </p>
+        </div>
+      </section>
+ 
+ 
+<!-- Artista 2  --+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
+      <section id="artista2" aria-label="Malafé de triana">
+        <div class="artista2-texto">
+          <h2>Malafé de triana</h2>
+          <p>
+            Una mañana, tras un sueño intranquilo, Gregorio Samsa se despertó
+            convertido en un monstruoso insecto. Estaba echado de espaldas sobre
+            un duro caparazón y, al alzar la cabeza, vio su vientre convexo y
+            oscuro, surcado por curvadas callosidades, sobre el que casi no se
+            aguantaba la colcha, que estaba a punto de escurrirse hasta el
+            suelo. Numerosas patas, penosamente delgadas en comparación con el
+            grosor normal de sus piernas, se agitaban sin concierto. - ¿Qué me
+            ha ocurrido? No estaba soñando. Su habitación, una habitación
+            normal, aunque muy pequeña, tenía el aspecto habitual. Sobre la mesa
+            había desparramado un muestrario
+          </p>
+        </div>
+
+        <img
+          class="artista2-imagen"
+          src="./media/malafe.jpeg"
+          alt="Malafé de triana dándolo todo"
+          aria-label="Imagen"
+        />
+      </section>
+    
+ <!-- Agenda  --+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
+      <section
+        id="agenda"
+        class="agenda-conciertos"
+        aria-label="Agenda de conciertos"
+      >
+        <h2>Agenda de conciertos</h2>
+        <p>Consulta la agenda de conciertos de tus artistas favoritos</p>
+        <table class="agenda-table" aria-label="Tabla con la agenda">
+          <thead class="agenda-header">
+            <tr>
+              <th>Artista</th>
+              <th>Ciudad</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Perico de los palotes</td>
+              <td>Madrid</td>
+              <td>02/07/2025</td>
+              <td>20:00</td>
+              <td>50€</td>
+            </tr>
+            <tr>
+              <td>Perico de los palotes</td>
+              <td>Barcelona</td>
+              <td>04/07/2024</td>
+              <td>21:00</td>
+              <td>60€</td>
+            </tr>
+            <tr>
+              <td>Perico de los palotes</td>
+              <td>Valencia</td>
+              <td>07/07/2025</td>
+              <td>19:00</td>
+              <td>55€</td>
+            </tr>
+            <tr>
+              <td>Malafé de triana</td>
+              <td>Sevilla</td>
+              <td>02/07/2025</td>
+              <td>20:30</td>
+              <td>45€</td>
+            </tr>
+            <tr>
+              <td>Malafé de triana</td>
+              <td>Granada</td>
+              <td>05/07/2025</td>
+              <td>19:30</td>
+              <td>50€</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- El footer, con los logos y el copy y un enlace hacia arriba.-->
+    <footer>
+      <img
+        class="logo"
+        src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRx-GppkPeyHkLustQkjKXYLxc6lr48L13Z7UwH7Fl95e8eg1w5Fjtdm7vOPAxBmwMPy9j1tAsrJEbMFHY6NSmkZK_BTvTRceLo4FDL2K91sJ13nrhEzqZXyg&usqp=CAc"
+        alt="Logo nota musical"
+        width="10%"
+      />
+      <p>made with ❤️ en <b>BCN</b></p>
+
+      <ul class="navbar-links" aria-label="Menu">
+        <li aria-label="Link a perico"><a href="#artista1">Perico</a></li>
+        <li aria-label="Link a Malafé"><a href="#artista2">Malafé</a></li>
+        <li aria-label="Link a Agenda"><a href="#agenda">Agenda</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
