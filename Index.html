@@ -8,18 +8,15 @@
   </head>
 
   <body>
-    <input type="checkbox" id="modal-toggle">
-    <div class="modal-div">
-      <div class="modal">
-        <label for="modal-toggle" class="close-modal">X</label>
-        <h2>¡Bienvenido a Sing Star!</h2>
-        <p>
-          Aquí podrás encontrar a tus artistas favoritos y consultar su agenda de conciertos.
-          ¡Disfruta de la música!
-        </p>
-      </div>
-      <div class="modal-bg"></div>
-    </div>
+    
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>Mi modal</h2>
+		<p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p>
+		<p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p>
+	</div>
+</div>
     <!-- ----Comentar es de guapas. Header Con su logo, H1 y  navbar, en tres elementos con el ultimo con dos elementos dentro,  en flex a los laos   -->
     <header>
       <nav class="navbar">
@@ -65,6 +62,7 @@
               comuniones por un módico precio
             </p>
           </div>
+          
         </div>
       </section>
 
@@ -86,7 +84,8 @@
               La Fuerça Elêttronica Andaluça, çe abentura a reinterpretâh er forklore andalûh en er çiglo XXI mediante la fuçión con la múçica elêttrónica. Êtte proyêtto no teme deçafiâh lâ combençionê, çelebrando con la riqueça curturâh de Andaluçía mientrâ abraça lâ poçibilidadê înnobadorâ que ofreçe la era contemporánea  
             </p>
           </div>
-          <button type="button">contratar</button>
+          <button type="button" class="contratacion"><a href="#openModal">contratar</a>
+</button>
         </section>
 
         <!-- Artista 2  --+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
@@ -122,7 +121,8 @@
               quedaron plasmadas en un manifiesto publicado por el grupo.
             </p>
           </div>
-          <button type="button">contratar</button>
+          <button type="button" class="contratacion"><a href="#openModal">contratar</a>
+</button>
         </section>
 
         <section id="artista3" aria-label="Pollito california">
@@ -150,7 +150,8 @@ Después de visitar varios lugares de Europa, entró en España por Girona hacie
 Ahora tiene 50 y tantos años y se hace llamar "Pollito de California" , es autor de famosas canciones como "Resaca" o "Quiero volar", hoy en día actúa por locales y fiestas de todo el mundo, demostrando su arte, poderío y su gracia encima del escenario.
             </p>
           </div>
-          <button type="button">contratar</button>
+          <button type="button" class="contratacion"><a href="#openModal">contratar</a>
+</button>
         </section>
       </section>
 
