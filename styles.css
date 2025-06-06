@@ -121,16 +121,21 @@ main {
   text-align: right;
 }
 /* Estilos de Artistas y fotos */
-.artistas {
-  display: flex;
 
+.blur{ z-index: -1;
+  filter: blur(8px);
+}
+
+  .artistas {
+  display: flex;
+  backdrop-filter: blur(5px);
   box-shadow: 9px 10px 3px 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
   gap: 20px;
   border-radius: 2.5vh;
 }
 #artista1,
-#artista3 {
+#artista3, #artista2 {
   display: flex;
   height: fit-content;
   width: 100vw;
@@ -140,18 +145,9 @@ main {
   border-radius: 2.5vh;
   overflow: hidden;
   border: 4px inset #fc1dfc;
+  
 }
-#artista2 {
-  display: flex;
-  height: fit-content;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 2.5vh;
-  overflow: hidden;
-  border: 4px inset #fc1dfc;
-}
+
 .artista-img {
   margin: 10px 0px;
   border: 2px solid purple;
@@ -184,11 +180,12 @@ button {
 #agenda {
   display: flex;
   margin-top: 20%;
+   backdrop-filter: blur(5px);
   box-shadow: 9px 10px 3px 0px rgba(0, 0, 0, 0.1);
   align-items: center;
   flex-direction: column;
   border-radius: 25px;
-  border: 2px inset #fc1dfc;
+  
   overflow: hidden;
 }
 
